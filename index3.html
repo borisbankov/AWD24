@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.box1, .box2{
+			background: orange;
+		}
+		.box3{
+			background: yellow;
+		}
+		.box4, .box5, .box6 {
+			background: blue;
+		}
+		.box7, .box8, .box9, .box10{
+			background: gray;
+		}
+		div{
+			border:solid white 1px;
+			flex: 0 0 100%;
+			box-sizing: border-box;
+		}
+		.row{
+			display:flex;
+			flex-wrap: wrap;
+		}
+		.row > div {
+			height: 50px;
+		}
+		@media screen and (min-width:768px){
+			.box7, .box8, .box9, .box10{
+				flex: 0 0 auto;
+				width: 50%;
+			}
+		}
+		@media screen and (min-width:1024px){
+			.box1, .box2{
+				flex: 0 0 auto;
+				width: 50%;
+			}
+			.box4, .box5, .box6 {
+				flex: 0 0 auto;
+				width: 33.333333%;
+			}
+			.box7, .box8, .box9, .box10{
+				flex: 0 0 auto;
+				width: 25%;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="row">
+		<div class="box1">1 </div>
+		<div class="box2">1 </div>
+	</div>
+	<div class="row">
+		<div class="box3">1 </div>
+	</div>
+	<div class="row">
+		<div class="box4">1 </div>
+		<div class="box5">1 </div>
+		<div class="box6">1 </div>
+	</div>
+	<div class="row">
+		<div class="box7">1 </div>
+		<div class="box8">1 </div>
+		<div class="box9">1 </div>
+		<div class="box10">1 </div>
+	</div>
+
+	</body>
+	</html>

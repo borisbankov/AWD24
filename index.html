@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+    <style>
+    body{
+        background:black;
+    } 
+    div{
+        background:white;
+        margin:0 auto;
+        width:500px;
+    }
+    @media screen and (min-width:768px){
+    	div{
+    		width: 600px;
+    		background: green;
+    	}
+    }
+    @media screen and (min-width:1200px){
+    	div{
+    		width:900px;
+    		background: red;
+    	}
+    }
+    @media screen and (min-width:1600px){
+    	div{
+    		width:1200px;
+    		background: yellow;
+    	}
+    }
+    </style>
+</head>
+<body>
+    <div class="">
+      <h1>This is a reponsive container</h1>
+      <p>This container is <span class=""></span> pixels wide when the browser is <span class=""></span> pixels wide. Resize the browser to see it change.</p>
+    </div>
+</html>
